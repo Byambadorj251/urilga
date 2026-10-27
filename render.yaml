@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: bolzoony-urilga
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: RESEND_API_KEY
+        sync: false
+      - key: RECIPIENT_EMAIL
+        value: byambadorj023@gmail.com
